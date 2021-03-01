@@ -1,0 +1,170 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	align-items: center;
+}
+
+header {
+	margin: 0;
+	width: 100%;
+}
+
+.landingh1 {
+	font-size: 50px;
+}
+
+h1 {
+	color: #9a1750;
+}
+
+.imagediv {
+	padding-left: 0px;
+	padding-top: 50px;
+}
+
+.h1div {
+	padding-top: 150px;
+}
+
+.chatimg {
+	height: 700px;
+	width: 700px;
+}
+
+.bg {
+	animation: slide 3s ease-in-out infinite alternate;
+	background-image: linear-gradient(60deg, #efe2ba 50%, #f172a1 50%);
+	bottom: 0;
+	left: -50%;
+	opacity: .5;
+	position: fixed;
+	right: -50%;
+	top: 0;
+	z-index: -1;
+}
+
+.bg2 {
+	animation-direction: alternate-reverse;
+	animation-duration: 4s;
+}
+
+.bg3 {
+	animation-duration: 5s;
+}
+
+.content {
+	background-color: rgba(255, 255, 255, .8);
+	border-radius: .25em;
+	box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+	box-sizing: border-box;
+	left: 50%;
+	padding: 10vmin;
+	position: fixed;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	font-family: monospace;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(-25%);
+	}
+	100% {
+		transform: translateX(25%);
+	}
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+	0% {
+		transform: translate3d(0, 100%, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(0, 50%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes showBottomText {
+	0% {
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+.animated-title {
+	color: #9a1750;
+	font-family: Roboto, Arial, sans-serif;
+	height: 60vmin;
+	left: 30%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 75vmin;
+}
+.animated-title > div {
+	height: 50%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+.animated-title > div div {
+	font-size: 10vmin;
+	padding: 2vmin 0;
+	position: absolute;
+}
+.animated-title > div div span {
+	display: block;
+}
+.animated-title > div.text-top {
+	border-bottom: 1vmin solid #9a1750;
+	top: 0;
+}
+.animated-title > div.text-top div {
+	animation: showTopText 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	bottom: 0;
+	transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+	color: #9a1750;
+}
+.animated-title > div.text-bottom {
+	bottom: 0;
+}
+.animated-title > div.text-bottom div {
+	animation: showBottomText 0.5s;
+	animation-delay: 1.75s;
+	animation-fill-mode: forwards;
+	top: 0;
+	transform: translate(0, -100%);
+}
+
+.btn-login {
+	color: #9a1750;
+	border: 1px solid #9a1750;
+	border-radius: 10px;
+	height: 60px;
+	width: 200px;
+	font-size: 20px;
+	margin-top: 450px;
+	background: transparent;
+}
+
+.btn-login:hover {
+	background-color: #5d001e;
+	border: 1px solid #5d001e;
+	color: #efe2ba;
+}
